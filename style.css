@@ -1,0 +1,39 @@
+* {
+margin: 0;
+padding: 0;
+}
+h1 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    color: rgb(10, 189, 243);
+    border: solid 1px;
+    font-family: ImChalkdusterpact;
+}
+
+body {
+    background-color: black;
+    background-image:url(img.jpg);
+}
+
+.box, form {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border-radius: 30px;
+    padding: 0 15px 0 15px;
+}
+
+button {
+    width: 150px;
+    height: 25px;
+    color: rgb(0, 0, 0);
+    border: solid 2px;
+    font-family: ImChalkdusterpact;
+}
