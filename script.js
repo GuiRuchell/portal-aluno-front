@@ -5,7 +5,7 @@ const Isenha = document.querySelector(".senha");
 const Itel = document.querySelector(".tel");
 
 function cadastrar() {
-    fetch("http://localhost:8080/cadastrar",
+    fetch("http://localhost:8080/api/aluno",
         {
             headers: {
                 'Accept': 'application/json',
