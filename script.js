@@ -2,7 +2,7 @@ const formulario = document.querySelector("form");
 const Inome = document.querySelector(".nome");
 const Iemail = document.querySelector(".email");
 const Isenha = document.querySelector(".senha");
-const Itel = document.querySelector(".tel");
+const Itel = document.querySelector(".telefone");
 
 function cadastrar() {
     fetch("http://localhost:8080/api/aluno",
