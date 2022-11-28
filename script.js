@@ -1,8 +1,9 @@
 const formulario = document.querySelector("form");
-const Inome = document.querySelector(".nome");
-const Iemail = document.querySelector(".email");
-const Isenha = document.querySelector(".senha");
-const Itel = document.querySelector(".telefone");
+const INome = document.querySelector(".name");
+const IUserName = document.querySelector(".userName")
+const IEmail = document.querySelector(".email");
+const ISenha = document.querySelector(".password");
+const ITel = document.querySelector(".phone");
 
 function cadastrar() {
     fetch("http://localhost:8080/api/aluno",
@@ -13,10 +14,12 @@ function cadastrar() {
             },
             method: "POST",
             body: JSON.stringify({
-                nome: Inome.value,
-                email: Iemail.value,
-                senha: Isenha.value,
-                telefone: Itel.value
+                
+                name: INome.value,
+                userName: IUserName.value,
+                email: IEmail.value,
+                password: ISenha.value,
+                phone: ITel.value
             })
         })
         .then(function (res) { console.log(res) })
@@ -25,10 +28,11 @@ function cadastrar() {
 }
 
 function limpar() {
-    Inome.value = "";
-    Iemail.value = "";
-    Isenha.value = "";
-    Itel.value = "";
+    INome.value = "";
+    IEmail.value = "";
+    ISenha.value = "";
+    ITel.value = "";
+    IUserName.value = "";
 }
 
 formulario.addEventListener('submit', function (event) {

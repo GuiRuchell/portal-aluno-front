@@ -34,6 +34,14 @@ input {
     padding: 0 15px 0 15px;
 }
 
+.form-control.success input {
+    border: 3px solid #4ECA64;
+}
+
+.form-control.error input {
+    border: 3px solid #DB5A5A;
+}
+
 button {
     margin-top: -15px;
 	width: 150px;
@@ -59,7 +67,15 @@ button:hover{
 	border-bottom: 2px solid #3498DB;
 	font-size: 15px;
 }
-.nome{
+.name{
+	margin-bottom: 25px;
+	padding: 5px;
+	border: 0;
+	background-color: #EAEDED;
+	border-bottom: 2px solid #3498DB;
+	font-size: 15px;
+}
+.userName{
 	margin-bottom: 25px;
 	padding: 5px;
 	border: 0;
@@ -77,7 +93,7 @@ button:hover{
 	font-size: 15px;
 }
 
-.senha{
+.password{
 	margin-bottom: 25px;
 	padding: 5px;
 	border: 0;
@@ -86,7 +102,7 @@ button:hover{
 	font-size: 15px;
 }
 
-.telefone{
+.phone{
 	margin-bottom: 25px;
 	padding: 5px;
 	border: 0;
